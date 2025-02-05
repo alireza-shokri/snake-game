@@ -7,6 +7,6 @@ You can move the snake with the arrow keys ;
 
  ↗️↖️
 ---
-[click to see]()
+[click to see](https://alireza-shokri.github.io/snake-game/)
 ---
 > alireza-shokri

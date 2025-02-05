@@ -111,7 +111,7 @@ const updateSnake = function () {
   }
 };
 let time = 100;
-// MediaQuery 
+// MediaQuery
 function handleMediaQueryChange(e) {
   if (e.matches) {
     row = 24;
@@ -152,9 +152,10 @@ const initFunc = function () {
   createFood();
   interval = setInterval(updateSnake, time);
 };
-
-initFunc();
-
+// Load page 
+window.onload = function () {
+  document.querySelector(".contenar").style.display = "block";
+  initFunc();
+};
 document.body.addEventListener("keydown", (e) => changeDirection(e.keyCode));
-// mediaQuery.addEventListener("change", handleMediaQueryChange);
 allBtn_phone.forEach((item) => item.addEventListener("click", BtnClick));
